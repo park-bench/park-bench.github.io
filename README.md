@@ -21,7 +21,7 @@ software.
 
 # Detailed Descriptions
 
-## Gpgmailer
+## [Gpgmailer](https://github.com/park-bench/gpgmailer)
 Gpgmailer is a daemon that sends encrypted email and includes a Python library
 to add messages to its' queue.  The Python library, gpgmailqueue, accepts a
 subject, body, and an arbitrary number of attachments, then writes the
@@ -29,25 +29,25 @@ unencrypted message to a file defined in the configuration file. The daemon
 reads the file, builds the email, signs, encrypts, and sends a
 properly-formatted PGP/MIME email to each configured recipient.
 
-## Torwatchdog
+## [Torwatchdog](https://github.com/park-bench/torwatchdog)
 Torwatchdog is a relatively simple URL checking daemon that uses Tor and times
 each request randomly. It starts its own Tor instance and randomly selects from
 a specified list of nameservers. When the daemon detects a state change, either
 up or down, it sends an encrypted email notification via Gpgmailer.
 
-## Watchman
+## [Watchman](https://github.com/park-bench/watchman)
 Watchman is a daemon that monitors a camera for motion and responds by taking
 several pictures. Those pictures are then sent in an encrypted email via
 Gpgmailer. It detects and properly ignores background changes.
 
-## Netcheck
+## [Netcheck](https://github.com/park-bench/netcheck)
 Netcheck is a daemon that attempts to keep a working Internet connection at all
 times. It first checks the wired network for an address and for DNS capability.
 If that fails, it does the same with the backup wifi network, and if that
 fails, it checks a list of supplemental wifi networks. If all of that fails, it
 just keeps trying.
 
-## Confighelper
+## [Confighelper](https://github.com/park-bench/confighelper)
 Confighelper is a class with a collection of helper methods for parsing
 configuration files, performing very basic value-checking, and setting up
 logging in a particular way. All of our projects depend on this library.

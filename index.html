@@ -1,95 +1,87 @@
-<html>
-    <head>
-        <title>Parkbench</title>
-    </head>
-    <body>
-        <h1>Organization Description</h1>
+<h1>Organization Description</h1>
 
-        <p>This is a collection of software built as a support system for a SecureDrop
-        instance. It contains four primary components: </p>
+<p>This is a collection of software built as a support system for a SecureDrop
+instance. It contains four primary components: </p>
 
-        <ul>
-        <li>gpgmailer sends encrypted email</li>
-        <li>torwatchdog discreetly monitors the status of a hidden service</li>
-        <li>watchman monitors a physical location with a camera</li>
-        <li>netcheck attempts to keep Internet access</li>
-        </ul>
+<ul>
+<li>gpgmailer sends encrypted email</li>
+<li>torwatchdog discreetly monitors the status of a hidden service</li>
+<li>watchman monitors a physical location with a camera</li>
+<li>netcheck attempts to keep Internet access</li>
+</ul>
 
-        <p>torwatchdog, watchman, and netcheck can all be used independently of each
-        other, but require gpgmailer.</p>
+<p>torwatchdog, watchman, and netcheck can all be used independently of each
+other, but require gpgmailer.</p>
 
-        <p>These programs are still in development and may not be production-ready.
-        However, if you do use our software, please let us know. Any feedback is
-        extremely helpful.</p>
+<p>These programs are still in development and may not be production-ready.
+However, if you do use our software, please let us know. Any feedback is
+extremely helpful.</p>
 
-        <h1>Motivation</h1>
+<h1>Motivation</h1>
 
-        <p>We initially developed these applications while planning a local SecureDrop
-        instance, but chose to only continue developing the supporting monitoring
-        software.</p>
+<p>We initially developed these applications while planning a local SecureDrop
+instance, but chose to only continue developing the supporting monitoring
+software.</p>
 
-        <h1>Detailed Descriptions</h1>
+<h1>Detailed Descriptions</h1>
 
-        <h2>Gpgmailer</h2>
+<h2><a href="https://github.com/park-bench/gpgmailer">Gpgmailer</a></h2>
 
-        <p>Gpgmailer is a daemon that sends encrypted email and includes a Python library
-        to add messages to its' queue.  The Python library, gpgmailqueue, accepts a
-        subject, body, and an arbitrary number of attachments, then writes the
-        unencrypted message to a file defined in the configuration file. The daemon
-        reads the file, builds the email, signs, encrypts, and sends a
-        properly-formatted PGP/MIME email to each configured recipient.</p>
+<p>Gpgmailer is a daemon that sends encrypted email and includes a Python library
+to add messages to its' queue.  The Python library, gpgmailqueue, accepts a
+subject, body, and an arbitrary number of attachments, then writes the
+unencrypted message to a file defined in the configuration file. The daemon
+reads the file, builds the email, signs, encrypts, and sends a
+properly-formatted PGP/MIME email to each configured recipient.</p>
 
-        <h2>Torwatchdog</h2>
+<h2><a href="https://github.com/park-bench/torwatchdog">Torwatchdog</a></h2>
 
-        <p>Torwatchdog is a relatively simple URL checking daemon that uses Tor and times
-        each request randomly. It starts its own Tor instance and randomly selects from
-        a specified list of nameservers. When the daemon detects a state change, either
-        up or down, it sends an encrypted email notification via Gpgmailer.</p>
+<p>Torwatchdog is a relatively simple URL checking daemon that uses Tor and times
+each request randomly. It starts its own Tor instance and randomly selects from
+a specified list of nameservers. When the daemon detects a state change, either
+up or down, it sends an encrypted email notification via Gpgmailer.</p>
 
-        <h2>Watchman</h2>
+<h2><a href="https://github.com/park-bench/watchman">Watchman</a></h2>
 
-        <p>Watchman is a daemon that monitors a camera for motion and responds by taking
-        several pictures. Those pictures are then sent in an encrypted email via
-        Gpgmailer. It detects and properly ignores background changes.</p>
+<p>Watchman is a daemon that monitors a camera for motion and responds by taking
+several pictures. Those pictures are then sent in an encrypted email via
+Gpgmailer. It detects and properly ignores background changes.</p>
 
-        <h2>Netcheck</h2>
+<h2><a href="https://github.com/park-bench/netcheck">Netcheck</a></h2>
 
-        <p>Netcheck is a daemon that attempts to keep a working Internet connection at all
-        times. It first checks the wired network for an address and for DNS capability.
-        If that fails, it does the same with the backup wifi network, and if that
-        fails, it checks a list of supplemental wifi networks. If all of that fails, it
-        just keeps trying.</p>
+<p>Netcheck is a daemon that attempts to keep a working Internet connection at all
+times. It first checks the wired network for an address and for DNS capability.
+If that fails, it does the same with the backup wifi network, and if that
+fails, it checks a list of supplemental wifi networks. If all of that fails, it
+just keeps trying.</p>
 
-        <h2>Confighelper</h2>
+<h2><a href="https://github.com/park-bench/confighelper">Confighelper</a></h2>
 
-        <p>Confighelper is a class with a collection of helper methods for parsing
-        configuration files, performing very basic value-checking, and setting up
-        logging in a particular way. All of our projects depend on this library.</p>
+<p>Confighelper is a class with a collection of helper methods for parsing
+configuration files, performing very basic value-checking, and setting up
+logging in a particular way. All of our projects depend on this library.</p>
 
-        <h1>Build/Install Instructions</h1>
+<h1>Build/Install Instructions</h1>
 
-        <p>Each package can be built in any order, but Confighelper must be installed
-        first, Gpgmailer must be installed second, and then Torwatchdog, Watchman, and
-        Netcheck may be installed in any order. Each of these projects has specific
-        build instructions on their respective project pages.</p>
+<p>Each package can be built in any order, but Confighelper must be installed
+first, Gpgmailer must be installed second, and then Torwatchdog, Watchman, and
+Netcheck may be installed in any order. Each of these projects has specific
+build instructions on their respective project pages.</p>
 
-        <h1>Contact</h1>
+<h1>Contact</h1>
 
-        <p>We would love to know if you are using any of our projects! Even one user is a
-        strong motivator for us, so please contact us with any questions or comments,
-        either through Github or email.</p>
+<p>We would love to know if you are using any of our projects! Even one user is a
+strong motivator for us, so please contact us with any questions or comments,
+either through Github or email.</p>
 
-        <ul>
-        <li>eviljoel: eviljoel (at) linux (dot) com, PGP fingerprint: A2BE 2D12 24D1 67CA 8830  DDE7 DFB3 676B 196D 6430</li>
-        <li>andklapp: andklapp (at) null (dot) net, PGP fingerprint: C5FB D515 CE2C 67B0 088D  BD5E D78A DB07 F66B 6AE4</li>
-        <li>brittdog: bkscaccia (at) gmail (dot) com, PGP fingerprint: 31C4 04D0 5658 35D7 F469  55DF 05FF 70C5 3851 1342</li>
-        </ul>
+<ul>
+<li>eviljoel: eviljoel (at) linux (dot) com, PGP fingerprint: A2BE 2D12 24D1 67CA 8830  DDE7 DFB3 676B 196D 6430</li>
+<li>andklapp: andklapp (at) null (dot) net, PGP fingerprint: C5FB D515 CE2C 67B0 088D  BD5E D78A DB07 F66B 6AE4</li>
+<li>brittdog: bkscaccia (at) gmail (dot) com, PGP fingerprint: 31C4 04D0 5658 35D7 F469  55DF 05FF 70C5 3851 1342</li>
+</ul>
 
-        <h1>License</h1>
+<h1>License</h1>
 
-        <p>These projects are all licensed under the Gnu Public License version 3.  This
-        description project is licensed under the Creative Commons
-        Attribution-ShareAlike 4.0 International license.</p>
-
-    </body>
-</html>
+<p>These projects are all licensed under the Gnu Public License version 3.  This
+description project is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International license.</p>
