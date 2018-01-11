@@ -73,3 +73,8 @@ either through Github or email.
 These projects are all licensed under the Gnu Public License version 3.  This
 description project is licensed under the Creative Commons
 Attribution-ShareAlike 4.0 International license.
+
+# Special Thanks
+We'd like to thank to the now defunct [CivicLab](http://www.civiclab.us/) and it former operators, Benjamin Sugar and [Tom Tresser](http://www.tresser.com/). CivicLab provided some early support for our project by providing regular meeting and storage space.
+
+Mr. Tresser is an especially vocal community activist. As a thank you to him, we would like to bring your attention to his book, [Chicago Is Not Broke](http://wearenotbroke.org/).
