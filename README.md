@@ -67,7 +67,6 @@ either through Github or email.
 
 * eviljoel: eviljoel (at) linux (dot) com, PGP fingerprint: A2BE 2D12 24D1 67CA 8830  DDE7 DFB3 676B 196D 6430
 * andklapp: andklapp (at) null (dot) net, PGP fingerprint: C5FB D515 CE2C 67B0 088D  BD5E D78A DB07 F66B 6AE4
-* brittdog: bkscaccia (at) gmail (dot) com, PGP fingerprint: 31C4 04D0 5658 35D7 F469  55DF 05FF 70C5 3851 1342
 
 # License
 These projects are all licensed under the Gnu Public License version 3.  This
