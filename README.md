@@ -66,7 +66,7 @@ strong motivator for us, so please contact us with any questions or comments,
 either through Github or email.
 
 * eviljoel: eviljoel (at) linux (dot) com, PGP fingerprint: A2BE 2D12 24D1 67CA 8830  DDE7 DFB3 676B 196D 6430
-* andklapp: andklapp (at) null (dot) net, PGP fingerprint: C5FB D515 CE2C 67B0 088D  BD5E D78A DB07 F66B 6AE4
+* emfrost: emfrost (at) posteo (dot) net, PGP fingerprint: 2D2E 5ACA 36AD F03F 35B9 AB73 FD1F A524 668F B1FA
 
 # License
 These projects are all licensed under the Gnu Public License version 3.  This
