@@ -1,0 +1,174 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ParkBench</title>
+    <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link type="text/css" rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <header>
+	<div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a> 
+	  <a href="setup.html">Set-Up</a>
+	  <a href="detailed_descriptions.html">Details</a>
+	  <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <div class="bar"></div>
+		<div class="bar"></div>
+		<div class="bar"></div>
+	  </a> 
+
+    </div>
+	</header>
+    <a href="index.html"><img class="top_Banner" id ="parkBenchImage" src="site_images/icon_typeC.png" alt="Parkbench Banner" /></a>
+  
+	<h1>How it Works</h1>
+	  <h2>Build/Install Instructions</h2>
+	  <div class="containerbuild">
+	    <p class="setupPage">Each package can be built in any order, but Confighelper must be installed
+        first, Gpgmailer must be installed second, and then batwatch, netcheck, torwatchdog, and watchman
+        may be installed in any order. Each of these projects has specific
+        build instructions on their respective project pages.</p>
+   	  </div>
+	
+	<h2>Server Monitoring</h2>
+	  <div class="containersetup1">
+        <p class="setupPage">It is important to know if your SecureDrop instance stops running. torwatchdog and 
+		gpgmailer can be used together to provide you with encrypted email notifications if your 
+		SecureDrop instance goes down. It is recommended that you install this monitoring software 
+		on several geographically diverse computers to make it harder for adversaries effectively 
+	    disable it.</p>
+	  </div>
+	  
+    <h2>Cabinet Setup</h2>
+  	  <div class="containersetup1">
+        <p class="setupPage">When we still intended to actually create a SecureDrop instance, we created a custom 
+		server cabinet to house our SecureDrop servers. For the cabinet, we used a steal lockable 
+		cabinet and drilled holes (with a hole saw) so that the servers could get access to electricity 
+		and wired Ethernet. On the doors of the cabinet, we attached a staple safety hasp which allowed 
+		us to lock the cabinet with a high security padlock.</p>
+	  </div>
+
+         
+          <h3 class="cabinet">The cabinet was intended to store the following</h3>
+	      <div class="containercab">
+		    <div id="cabinetItemOne">
+              <img class="cabinetpic" src="site_images/IMG_0847.jpg" alt="Cabinet shelf the server">
+            </div>
+			<ul id="cabinetItemTwo">
+		      <li class="list c1">The SecureDrop Application Server</li>
+              <li class="list c2">The SecureDrop Monitor Server</li>
+              <li class="list c1">A pfSense Network Firewall integrated with or connected to a switch</li>
+              <li class="list c2">A WiFi capable third server for Parkbench monitoring software</li>
+              <li class="list c1">The Secure Viewing Station laptop when not in use</li>
+              <li class="list c2">Several other secure laptops to be used for system administration</li>
+              <li class="list c1">Multiple USB cellular hotspots for maintaining a connection to the Internet</li>
+              <li class="list c2">A USB webcam for filming intruders</li>
+              <li class="list c1">Lighting to improve images of intruders</li>
+              <li class="list c2">A large uninterruptible power supply</li>
+              <li class="list c1">Other things we wanted to keep secure such as extra lock keys</li>
+            </ul> 
+          </div>	
+	  <div class="conatinerIn">
+        <h2>Intrusion Detection</h2>
+          <p class="setupPage">It is critical for any SecureDrop instance to have excellent physical security. batwatch,
+                  netcheck, gpgmailer, watchman, and a custom server cabinet can be used together to make it extremely 
+		  difficult for someone to gain physical access to SecureDrop servers and go undetected.</p>
+		  <h3>Internet Connection Redundancy</h3>
+          
+		    <p class="setupPage">Many security systems can be foiled by simply cutting off their connection the Internet. 
+		    Technically speaking, Parkbench is no different. However, what makes the Parkbench intrusion 
+		    detection system special is that it supports any number of backup Internet connections and is 
+		    designed to cycle through them quickly. Any Internet connection supported by Ubuntu's Network 
+		    Manager is supported.</p> 
+	  
+		  
+          
+		      <p class="setupPage">The SecureDrop Application Server and SecureDrop Monitor are simply plugged into the 
+		      pfSense firewall switch. The Parkbench monitoring server should be plugged into the pfSense 
+		      firewall switch, the camera, and the USB hot spots. Of course, the secure viewing station 
+		      should never be plugged into anything but power.</p>
+              
+			  <img id="webcampic" src="site_images/webcampic.png" alt="webcam" />
+		      <p class="setupPage">Within the cabinet, we attached the USB webcam to the top of the cabinet and positioned 
+		      the camera so that it would be pointing at the head of the person opening the cabinet. We 
+		      added permanent lighting in the cabinet to better light any potential intruder. To make the 
+		      cabinet less conspicuous, we affixed the loop side of hook and loop tape to the inside of the 
+		      seams of the cabinet doors. This stopped most of the light from being visible from outside of 
+		      the cabinet when it was closed.</p>
+			  <div class=" plugimages plugpics">
+                <img  class="plugimages" id="plugPic" src="site_images/cameraPlug.png" alt="web cam USB cord" />
+		        <br>
+				<img class="plugimages" id="plugPic2" src="site_images/cameraPlug2.png" alt="web cam USB cord with door closed" />
+			  </div>
+			  <p class="setupPage">The watchman camera software is specifically programmed to allow for the user to plug and
+		      unplug the USB camera at will. This allows for the camera to be easily temporarily disabled 
+		      so that an adversary cannot discretely use it to their advantage. To help ensure the camera 
+		      is plugged back in before the cabinet is locked, we clip the USB-A end of the camera to the 
+		      outside of the cabinet. This way, if we try to close the cabinet without plugging camera back 
+		      in, the cabinet door will not shut.</p>
+
+          <h3>Webcam Microphones</h3>
+		  <div class="container">
+            <p class="setupPage">Most USB Webcams today have an integrated microphone. We recommend disabling this 
+			microphone so that an adversary cannot use it to their advantage. Unfortunately, simply 
+			removing the webcam microphone will likely render the webcam completely inoperative. 
+			However, from our experience, if you simply bridge the solder points where the microphone 
+			should be, the camera will work as expected.</p> 
+          </div>
+
+          <h3>Uninterruptable Power</h3>
+             <p class="setupPage">All powered devices should be plugged into an uninterruptable power supply (UPS).
+               The UPS should be sufficient to provide power for several hours after main power is lost. If the UPS
+               completely drains and nobody is available to physically monitor the servers, one must assume the
+               servers are compromised.</p>
+             <p class="setupPage">The UPS should support a communications link for power status notifications. The
+               communications link should be connected to the Parkbench server where batwatch is installed.</p>
+		
+          <h3>Side Channel Attacks</h3>
+            <p class="setupPage">It is important to note that this setup might be vulnerable to several side channel 
+			attacks:</p>
+            <div class="containerSide">
+              <img class="powerButton" src="site_images/powerIconTwo.png" alt="power icon">
+  			  <p class="setupPage setupPageTwo">Power monitoring attack</p>
+     	      
+			  <img class="lightning" src="site_images/lightning.png" alt="lighting bolt icon">
+              <p class="setupPage setupPageTwo">Electromagnetic attack</p>
+			  
+              <img class="sound" src="site_images/soundFive.png" alt="sound icon">
+			  <p class="setupPage setupPageTwo">Acoustic attack</p>
+		    </div>
+			<p class="setupPage">When we were still committed to implementing a SecureDrop instance, we were going to 
+			attempt to mitigate these attacks. We had acquired a power line conditioner to attempt to
+			mitigate the power monitoring attack. To mitigate the acoustic attack, we planned to write 
+			a small computer program to produce low volume static from the Parkbench monitoring server's
+			speakers. To mitigate the electromagnetic attack, we were going to try to attach metal 
+			screening to the insides of the cabinet.</p>
+
+            <p class="setupPage">I cannot say for certain if any of these mitigation measures would have worked. If you 
+			decide to implement these mitigations, please do your own research and thoroughly test 
+			them.</p>
+	  </div>   
+
+	 
+
+	
+	<footer>
+    <div>    
+      <h3>Contact</h3>
+        <p class="contactp">We would love to know if you are using any of our projects! Even one user is a
+        strong motivator for us, so please contact us with any questions or comments,
+        either through GitHub or email.</p> 
+		
+		<p class="contactp">eviljoel<span id="eContactM"></span> PGP fingerprint: 
+                  <a href="https://keys.openpgp.org/search?q=A2BE2D1224D167CA8830DDE7DFB3676B196D6430" class="footerLink" target="_blank">A2BE 2D12 24D1 67CA 8830  DDE7 DFB3 676B 196D 6430</a></p>
+    </div>
+	</footer>
+
+    <script src="joel.js"></script>
+
+  </body>
+</html>
+	  

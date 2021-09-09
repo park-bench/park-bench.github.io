@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ParkBench</title>
+    <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link type="text/css" rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <header>
+	<div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a> 
+	  <a href="setup.html">Set-Up</a>
+	  <a href="detailed_descriptions.html">Details</a>
+	  <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <div class="bar"></div>
+		<div class="bar"></div>
+		<div class="bar"></div>
+	  </a> 
+
+    </div>
+	</header>
+    <a href="index.html"><img class="top_Banner" id ="parkBenchImage" src="site_images/icon_typeC.png" alt="Parkbench Banner" /></a>
+	  
+    <h1 class="h1">Detailed Descriptions</h1>
+	<h3>All Parkbench software can be found on our <a class="basicLink" href="https://github.com/park-bench" target="_blank">GitHub organization</a> page.</h3>
+
+  
+   	<div class="containerdone">
+      <div id="itemdone" class="itemD itemDA">    
+       <h3><a class="basicLink" href="https://github.com/park-bench/torwatchdog" target="_blank" style="text-align: center;">torwatchdog</a></h3>
+       <p class="detailPage detailPageOne">
+	   torwatchdog is a simple website availability monitor that runs over Tor. In order to operate 
+	   more inconspicuously, it checks for the specified website for availability at random intervals. 
+	   When the specified website's availability changes, torwatchdog sends an encrypted email notification
+	   to a predefined list of recipients.</p>
+      </div>
+	  
+	  <div id="itemdtwo" class="itemD itemDA">
+        <h3><a class="basicLink" href="https://github.com/park-bench/watchman" target="_blank">watchman</a></h3>
+        <p class="detailPage detailPageOne">watchman is a surveillance daemon that captures images of anything that moves within a camera's 
+		field of vision. Those images are then sent in an encrypted email to a predefined list of recipients.</p>
+		<div class="cameraPic"></div>
+	  </div>
+
+      <div id="itemdone" class="itemD itemDA">    
+       <h3><a class="basicLink" href="https://github.com/park-bench/batwatch" target="_blank" style="text-align: center;">batwatch</a></h3>
+       <p class="detailPage detailPageOne">
+	   batwatch monitors a system's batteries and uninterruptable power supplies for power state changes and sends encrypted e-mail
+           notifications of such changes to a predefined list of recipients. It is essentially used to notify system administrators if
+           servers loose power from a wall outlet.</p>
+      </div>
+	</div>
+	<div class="break"></div>	
+	<div class="containerdtwo">
+  	  <div id="itemdtone" class="itemD itemDA">
+	    <h3><a class="basicLink" href="https://github.com/park-bench/netcheck" target="_blank">netcheck</a></h3>
+        <p class="detailPage detailPageTwo">netcheck is a daemon that works hard at keeping the Parkbench monitoring server connected 
+	    to the Internet. It supports any number of Internet connections. Any device supported by Ubuntu's Network Manager is
+            supported by netcheck. If an Internet connection goes down, netcheck quickly 
+		switches to a backup. If all the backups are exhausted, netcheck keeps cycling through devices 
+		until an Internet connection is established.</p>
+      </div>
+
+      <div id="itemdthree" class="itemD itemDA">
+  	    <h3><a class="basicLink" href="https://github.com/park-bench/gpgmailer" target="_blank">gpgmailer</a></h3>
+        <p class="detailPage detailPageOne">gpgmailer is a daemon that sends signed encrypted emails to a predefined list of recipients. 
+	    Also included is a client library for queuing messages. Messages support an unencrypted subject, 
+		a plain text encrypted body (as opposed to a rich text encrypted body), and any number of encrypted 
+		attachments. gpgmailer is required by batwatch, torwatchdog, and watchman.</p>
+      </div>
+
+      <div id="itemdttwo" class="itemD itemDA">  
+        <h3><a class="basicLink" href="https://github.com/park-bench/confighelper" target="_blank">parkbench-common</a></h3>
+        <p class="detailPage detailPageTwo">parkbench-common is a collection of helper modules used by all other Parkbench projects. Currently 
+	    contains code responsible for configuration file parsing, daemonization, and interprocess communication.</p>
+      </div>
+	  
+	  
+    </div>
+	    
+		
+
+	<footer>
+    <div>    
+      <h3>Contact</h3>
+       
+	    <p class="contactp">We would love to know if you are using any of our projects! Even one user is a
+        strong motivator for us, so please contact us with any questions or comments,
+        either through GitHub or email.</p> 
+		
+  	    <p class="contactp">eviljoel<span id="eContactM"></span> PGP fingerprint: 
+              <a href="https://keys.openpgp.org/search?q=A2BE2D1224D167CA8830DDE7DFB3676B196D6430" class="footerLink" target="_blank">A2BE 2D12 24D1 67CA 8830  DDE7 DFB3 676B 196D 6430</a></p>
+		
+    </div>
+	</footer>
+
+    <script src="joel.js"></script>
+  </body>
+</html>

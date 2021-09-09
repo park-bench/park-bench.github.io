@@ -1,0 +1,846 @@
+html{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	background-color: #3A1803;
+}
+
+html, body{
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font: 1em "Liberation Sans", "Trebuchet MS", sans-serif;
+	background-color: #F7F4F3;
+	color: #3A1803;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+} 
+
+
+footer{
+	background: linear-gradient(#F7F4F3,#3A1803);
+	padding: 60px 7px 10px;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	border: 0;
+}
+h1, h2, h3, h4{
+	text-align: center;
+}
+
+.top_Banner{
+	display: block;
+	margin: auto;
+	padding: 5px;
+}
+
+#parkBenchImage{
+    width: 25%;
+	height: auto;
+}
+.contactp{
+	color: #E7F6FC;
+	text-align: center;
+	margin: 0;
+	padding: 25px;
+}
+
+.contact{
+	color: #3A1803;
+	margin: 0;
+	padding: 0px 10px 0px;
+}
+
+
+
+/*basic navbar styles*/
+.topnav {
+  overflow: hidden;
+  background-color: #3A1803;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #F7F4F3;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #3A1803;
+  color: #D0E8D1;
+}
+
+.topnav a.active {
+  background-color: #3A1803;
+  color: white; 
+}
+
+.topnav .icon {
+  display: none;
+  padding: 2px 10px;
+}
+
+.bar{
+  width: 30px;
+  height: 4px;
+  background-color: #F7F4F3;
+  margin: 7px 0;
+}
+
+
+/*end navbar styling*/
+/*end multi page styles*/
+
+
+/*index page styling*/
+
+.mainPage{
+	margin: 0 25px;
+	
+}
+
+.mainParagraph{
+	padding: 0 50px;
+}
+
+.thanks{
+	margin: 15px 25px;
+ 	padding-bottom: 0;
+	padding-top: 0;
+}
+
+.indexContainer{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+.indexBtn{
+	text-decoration: none;
+	width: 225px;
+	height: auto;
+	color: #F7F4F3;
+        width: 100%;
+	align-self: flex-start;
+}
+
+.btn{
+	display: block;
+	margin: 10px 0;
+	width: 275px;
+	height: auto;
+	border: none;
+	background-color: #3A1803;
+	border: 2px solid #F7F4F3;
+	padding: 10px 5px;
+        display: flex;
+        align-items: normal;
+}
+
+.btnTitle{
+	font: 1.25em bold, "Liberation Sans", "Trebuchet MS", sans-serif;
+	margin: 0;
+}
+
+.btnText{
+	font-size: 1.15em;
+}
+
+.indexBtn:hover{
+	color: #D0E8D1;
+}
+
+#descriptionP{
+	margin: 0 0 15px 0;
+}
+
+.basicLink{
+	text-decoration: none;
+	font-weight: bold;
+	color: #004225;
+}
+
+.footerLink{
+	text-decoration: none;
+	font-weight: bold;
+	color: #E7F6FC;
+}
+
+/*end index styling*/
+/*motivation styling*/
+
+.motivation{
+	margin: 5px;
+}
+
+.benchicon{
+	height: 25px;
+	width: 50px;
+}
+
+.organization{
+	margin: 5px;
+}
+
+/*setup page styling*/
+
+.cabinet{
+	text-align: center;
+}
+
+.cabinetpic{
+	width: 80%;
+	max-width: 700px;
+        /*height: 269px;*/
+	display: block;
+	margin: auto;
+        border-radius: 30px;
+}
+
+.setupPage{
+	padding: 15px;
+	margin: 0 50px; 
+}
+
+.setupPageTwo{
+	margin: 0 50px;
+	padding: 15px;
+}
+.containerbuild{
+	display: flex;
+	margin: 0 50px; 
+}
+
+.containersetup1{
+	display: flex;
+	margin: 0 50px; 
+}
+
+.containersetup2{
+	display: flex;
+	margin: 0 50px; 
+}
+
+.containerSide{
+	text-align: center;
+}
+
+.containercab{
+	margin: 0 50px;
+}
+
+.list{
+	padding: 10px 0;
+}
+
+#webcampic{
+	width: 300px;
+	height: auto;
+	max-width: 100%;
+	display: block;
+	margin: auto;
+	padding: 0;
+}
+
+#plugPic{
+	width: 300px;
+	max-width: 100%;
+	height: auto;  
+	display: block;
+	margin: auto;
+	padding: 0;
+}
+
+#plugPic2{
+	width: 300px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
+	padding: 0;
+}
+
+.powerButton{
+	display: block;
+	margin: auto;
+	width: 50px;
+	height: auto;
+	max-width: 100%;
+}
+
+.lightning{
+	
+}
+
+.sound{
+	display: block;
+	margin: auto;
+	height: 60px;
+	width: auto;
+	max-width: 100%;
+}
+
+/*end setup page styling*/
+
+/*about page styling*/
+
+#joelconatctpic{
+	display: block;
+	max-width: 100%;
+	width: 150px;
+	height: auto;
+	margin: auto;
+        border-radius: 30px;
+}
+
+#name{
+	text-align: center;
+}
+
+.motivationContainer{
+	margin: 30px 75px;
+}
+
+.aboutPage{
+	padding: 10px 0px 0px;
+}
+
+
+/*end about page stylin*/
+
+/*details page styling*/
+
+.detailPage{
+	text-align: left;
+}
+
+#itemdone{
+	margin: 0;
+	color: rgba(58, 24, 3);
+	padding: 10px 0;
+}
+
+#itemdtwo{
+	margin: 0;
+	padding: 10px 0;
+}
+
+#itemdthree{
+	margin: 0;
+	color: rgba(58, 24, 3);
+	padding: 10px 0;
+}
+
+#itemdtone{
+	margin: 0;
+	padding: 10px 0;
+}
+
+#itemdttwo{
+	margin: 0;
+	color: rgba(58, 24, 3);
+	padding: 10px 0;
+}
+
+.detailPage{
+	margin: 15px 50px;
+}
+
+/*end details page styling*/
+
+/*end of individual page styles*/
+
+/*responsive styling*/
+
+@media only screen and (min-width: 768px ) {
+/*set up styling side channel attacks*/
+    .containerSide{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin: 0 15px;
+		padding: 0;
+	}
+	
+	.setupPageTwo{
+		padding: 0;
+		margin: 25px 0;
+	}
+	
+	.powerButton{
+	    display: block;
+		margin: 0 10px;
+		width: 40px;
+ 	    height: 40px;
+	    max-width: 100%;
+	}
+	
+	.lightning{
+		display: block;
+		height: 40px;
+		width: auto;
+		margin: 0 10px;
+	}
+
+    .sound{
+		margin: 0 10px;
+	}
+	/*About page styling*/
+	.motivationContainer{
+	    margin: 30px 100px;
+	}
+	.aboutPage{
+		padding: 10px 0px 0px;
+	}
+	
+	/*index page styles*/
+	.mainPage{
+		padding: 0 50px;
+	}
+	.indexContainer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		align-items: stretch;
+	}
+	
+	.btn{
+		width: 40%;
+		padding: 10px 5px;
+		margin: 15px 5px;
+	}
+	
+	.btnTitle{
+		margin: 0;
+	}
+	
+	#btnTwo, #btnThree{
+	}
+	
+	#btnFour{
+	}
+	
+	/*end index page styles*/
+	
+	/*detail page styling*/
+	
+	.detailPage{
+		margin: 15px 100px;
+	}
+	
+}
+
+
+@media only screen and (min-width: 992px ) {
+	/*multipage styles*/
+	/*increase font size*/
+
+	html{
+	border-bottom: 30px solid #3A1803;
+	border-left: 30px solid #3A1803;
+	border-right: 30px solid #3A1803;
+	margin: 0px;
+	padding: 0px;
+    }
+	
+	body{
+		
+	}
+	
+    .container{
+  	    margin: 0;
+	    padding: 0;
+	    display: flex;
+	    justify-content: space-evenly;
+	}
+	
+/*navbar*/
+
+    .topnav a {
+        font-size: 1.50em;
+    }
+
+/*end navbar styles*/
+	
+/*end multipage styling*/	
+
+/*index page styling*/
+	#descriptionP{
+		text-align: center;
+	}
+
+	.containero{
+		margin: 0 5px;
+	    display: flex;
+		flex-direction: row;
+	    justify-content: center;
+	    color: #013328;
+	    padding: 0;
+	    flex-wrap: nowrap;
+    }
+	
+    .itemc{
+        display: flex;
+	    padding: 0 15px;	
+    }
+	.containerm{
+	    margin: 0;
+	    padding: 0;
+	}
+	
+	.btnTitle{
+		margin: 0;
+	}
+	
+	#btnFour{
+		/*padding-top: 15px;*/
+	}
+	
+/* thanks styling*/
+    .thanks{
+	  display: flex;	
+	  flex: 1 1 0px;
+    }
+	.containerm{
+		margin: 0 5px;
+	}
+	.thankslink{
+		color: #06222d;
+	}
+	
+	.indexContainer{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: no-wrap;
+		margin: 0 10px;
+	}
+	
+	.btn{
+		width: 23%;
+		padding: 10px 5px;
+		margin: 0 5px;
+	}
+
+/*end thanks styling*/
+/*end index page styling*/
+
+/*details page styling*/
+	.containerdone{
+	    display: flex;
+		flex-direction: row;
+		margin: 0 10px;
+	}
+	
+	.containerdtwo{
+		display: flex;
+		flex-direction: row;
+		margin: 5px 60px;
+	}
+	.detailPageOne{
+		padding: 0px;
+		margin: 5px 10px;
+	}
+	
+	.detailPageTwo{
+		padding: 0px 5px;
+		margin: 0px 20px;
+	}
+	.itemDA{
+		justify-content: center;
+		flex: 1 1 0;
+		background-color: #F7F4F3;
+	    color: #3A1803;
+
+	}
+	
+	.itemDB{
+		margin: 0 45px;
+		flex: 1 1 0;
+
+	}
+	
+/*	.break{
+	    background-color: rgba(58, 24, 3, .92);	
+		width: 98%;
+		height: 5vh;
+		transform: skew(40deg);
+		margin-left: 10px;
+		padding-right: 7px;
+	}*/
+	
+    .cameraPic{
+		content: url("site_images/cameraSix.png");
+		display: block;
+		margin: auto;
+	}
+	
+	#itemdone{
+		background-color: #F7F4F3;
+	    color: #3A1803;
+		padding: 5px;
+	}
+	
+	#headerFourTwo{
+		color: #3A1803;
+	}
+	
+	#headerFourTwo:hover{
+        color: #A26C2A;
+	}
+	
+	#headerFourTwo:active{
+	    color: #EB600A; 		
+	}
+	
+	#itemdtwo{
+		background-color: #F7F4F3;
+	    color: #3A1803;
+		padding: 5px;
+		border-radius: 5px;
+	}
+	
+	#itemdthree{
+		background-color: #F7F4F3;
+	    color: #3A1803;
+		padding: 5px;
+	}
+	
+	#itemdtone{
+		background-color: #F7F4F3;
+	    color: #3A1803;
+		padding: 5px;
+	}
+	
+	#itemdttwo{
+		background-color: #F7F4F3;
+	    color: #3A1803;
+		padding: 5px;
+	}
+	
+	#headerFourFour{
+	    text-decoration: none;
+	    margin: auto;
+	    color: #3A1803;
+	}
+
+    #headerFourOne, #headerFourThree, #headerFourFive{
+		text-decoration: none;
+		color: #3A1803;
+		margin: auto;
+	}
+
+    #headerFourOne:hover{
+	    color: #A26C2A; 
+    }
+
+    #headerFourTwo:hover{
+	    color: #A26C2A;
+    }
+
+    #headerFourThree:hover{
+	    color: #A26C2A;
+    }
+
+    #headerFourFour:hover{
+	    color: #A26C2A;
+    }
+
+    #headerFourFive:hover{
+	    color: #A26C2A;
+    }
+
+    #headerFourOne:active{
+	    color: #EB600A;  
+    }
+
+    #headerFourTwo:active{
+	    color: #EB600A; 
+    }
+
+    #headerFourThree:active{
+	    color: #EB600A; 
+    }
+
+    #headerFourFour:active{
+	    color: #EB600A; 
+    }
+
+    #headerFourFive:active{
+	    color: #EB600A; 
+    }
+/*details page styling end*/
+
+
+/*setup page styling*/
+	#sideChannel{
+	}
+	.containerSide{
+	    display: flex;
+	    justify-content: space-evenly;
+		margin: 0px 50px 0px 20px;
+    }
+	.cabinetpic{
+		content: url("site_images/cabinet_pic_two.jpg");
+	    /*width: 425px;*/
+	    max-width: 700px;
+	    /*height: 480px;*/
+	    display: block;
+	    margin: auto;
+            display: flex;
+            align-items: start;
+	}
+	
+	.containercab{
+  	  display: flex;
+    }
+	
+    #cabinetItemOne{
+        display: inline;
+	    flex-flow: row;
+	    flex: 1;
+	    min-width: 0;
+        vertical-align: top; 
+    }
+
+    #cabinetItemTwo{
+	    display: flex;
+        flex-flow: row;
+	    flex: 1;
+        min-width: 0;
+		flex-direction: column;
+    }
+	
+	.plugimages {
+		display: flex;
+	}
+	
+	.plugpics{
+		display: flex;
+	}
+	
+	.containerSide{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin: 0 15px;
+		padding: 0;
+	}	
+
+	.powerButton{
+	    display: block;
+		margin: 0 15px;
+		width: 40px;
+ 	    height: 40px;
+	    max-width: 100%;
+	}
+	
+	.lightning{
+		display: block;
+		height: 40px;
+		width: auto;
+		margin: 0 15px;
+	}
+
+    .sound{
+		margin: 0 15px;
+	}
+/*setup page styling end*/
+
+
+/*about page styling*/
+	.motivationContainer{
+	    padding: 0px 25px;
+	}
+	
+	.aboutPage{
+		padding: 15px 20px 5px;
+	}
+/*about page styling end*/
+
+}
+
+/*navbar responsive styling*/
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*end navbar responsive styling*/
+
+/*for large screens*/
+@media screen and (min-width: 1200px){
+	body{
+		font-size: 1.25em;
+	}
+	.detailPage{
+		font-size: 1em;
+	}
+
+    .indexContainer{
+		margin: 0 15px;
+		flex-wrap: no-wrap;
+		align-items: stretch;
+	}
+	
+	.btn{
+		width: 24%;
+		font-size: .90em;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin: 0 5px;
+	}
+	
+	#btnOne{
+		/*padding-bottom: 15px;*/
+	}
+	
+	#btnTwo{
+		/*padding: 5px 15px 20px;*/
+	}
+	
+	#btnThree{
+		/*padding: 5px 15px 15px;*/
+	}
+
+	
+}
+
+@media screen and (min-width: 1400px){
+	body{
+	}
+}
+
+@media screen and (min-width: 1600px){
+	body{
+	}
+}

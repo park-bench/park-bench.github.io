@@ -1,99 +1,102 @@
 <!DOCTYPE html>
-<html>
-<head><title>Parkbench</title></head>
-<body>
+<html lang="en">
+  <head>
+    <title>ParkBench</title>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">	  
+	  <link type="text/css" rel="stylesheet" href="styles.css"/>
+  </head>
 
-<h1>Organization Description</h1>
+  <body>
+   
+    <header>
+	<div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a> 
+	  <a href="setup.html">Set-Up</a>
+	  <a href="detailed_descriptions.html">Details</a>
+	  <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <div class="bar"></div>
+		<div class="bar"></div>
+		<div class="bar"></div>
+	  </a> 
 
-<p>This is a collection of software built as a support system for a SecureDrop
-instance. It contains four primary components: </p>
+    </div>
+	</header>
+   
+    <a href="index.html"><img class="top_Banner" id ="parkBenchImage" src="site_images/icon_typeC.png" alt="Parkbench Banner" /></a>
+   <h1>What is ParkBench?</h1>
+	    <p class="mainPage mainParagraph">Parkbench is a collection of software that assists with the securing and monitoring of a 
+		server. It is intended to be used with a <a class="basicLink" href="https://securedrop.org/" target="_blank">SecureDrop</a> instance but 
+		can be used with any server you wish to make secure. Parkbench software monitors a server 
+		closet for an intruder and notifies administrators via encrypted e-mail when one is detected. 
+		It also has software to notify administrators if a server is not available.</p>
+		<br>
+		<p class="mainPage mainParagraph">Our Parkbench software can be found on our <a class="basicLink" href="https://github.com/park-bench" target="_blank">GitHub organization</a> page.</p>
+                <br>
+		<p class="mainPage mainParagraph">These programs are designed to work on Ubuntu Linux, the same Linux distribution that SecureDrop 
+		uses. These programs are still in development and may not be production-ready. </p>
+		<br>
+		<p class="mainPage mainParagraph">Parkbench is not affiliated with SecureDrop or the <a class="basicLink" href="https://freedom.press/" target="_blank">Freedom of the Press Foundation</a>.
+        </p>
 
-<ul>
-<li>gpgmailer sends encrypted email</li>
-<li>torwatchdog discreetly monitors the status of a hidden service</li>
-<li>watchman monitors a physical location with a camera</li>
-<li>netcheck attempts to keep Internet access</li>
-</ul>
+	<!--how the intro is worded will determine how the following will be styled on the page-->
 
-<p>torwatchdog, watchman, and netcheck can all be used independently of each
-other, but require gpgmailer.</p>
+	  
+	  <h2>Organization Description</h2>
+	  <div>
+	    <h3 class="mainPage" id="descriptionP"> The software contains four primary components:</h3>
+          <div class="indexContainer">
+		      <button class="btn" id="btnTwo"><a class="indexBtn" href="https://github.com/park-bench/torwatchdog" target="_blank"><p class="btnTitle">torwatchdog</p> 
+		      <p class="btnText">Monitors the availability status of a website over Tor.</p>
+		      </a></button>
+		  
+		 
+		      <button class="btn" id="btnThree"><a class="indexBtn" href="https://github.com/park-bench/watchman" target="_blank"><p class="btnTitle">watchman</p> 
+		      <p class="btnText">Monitors a physical location with a camera.</p>
+		      </a></button>
+          
+			  
+	          <button class="btn" id="btnFour"><a class="indexBtn" href="https://github.com/park-bench/netcheck" target="_blank"><p class="btnTitle">netcheck</p>
+	          <p class="btnText">Maintains a valid Internet connection with multiple devices.</p>
+		      </a></button>	
 
-<p>These programs are still in development and may not be production-ready.
-However, if you do use our software, please let us know. Any feedback is
-extremely helpful.</p>
+  		      <button class="btn" id="btnOne"><a class="indexBtn" href="https://github.com/park-bench/batwatch" target="_blank"><p class="btnTitle">batwatch</p> 
+		      <p class="btnText">Monitors a UPS for power state changes.</p>
+		      </a></button>
+	        
+	      </div>
+	    </div>
+      <h2>Special Thanks</h2>
+		  <p class="mainPage mainParagraph">We'd like to thank to the now defunct <a class="basicLink"" href="https://www.civiclab.us/" target="_blank">CivicLab</a> 
+		  and it former operators, Benjamin Sugar and <a class="basicLink" href="https://www.tresser.com/" target="_blank">Tom Tresser</a>. 
+		  CivicLab provided some early support for our project by providing regular meeting and storage space.</p>
+                  <br>
+		  <p class="mainPage mainParagraph">Mr. Tresser is an especially vocal community activist. As a thank you to him, we would like to bring your attention to his book, 
+		  <a class="basicLink" href="https://wearenotbroke.org/" target="_blank">Chicago Is Not Broke</a>.</p>   
+        <h2>License</h2>
+          <p class="mainPage">Parkbench software projects are all licensed under the <a class="basicLink" href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank"> GNU General Public License version 3.</a> 
+	      This website project is licensed under the <a class="basicLink" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International</a> 
+          license.</p>
 
-<h1>Motivation</h1>
+	
+      <br>
+      <br>
+  
+      <footer>
+        <div>    
+          <h3 class="contact">Contact</h3>
+            <p class="contactp">We would love to know if you are using any of our projects! Even one user is a
+             strong motivator for us, so please contact us with any questions or comments,
+             either through GitHub or email.</p> 
+		    <p class="contactp">eviljoel<span id="eContactM"></span> PGP fingerprint: 
+                      <a href="https://keys.openpgp.org/search?q=A2BE2D1224D167CA8830DDE7DFB3676B196D6430" class="footerLink" target="_blank">A2BE 2D12 24D1 67CA 8830  DDE7 DFB3 676B 196D 6430</a></p>
+		  <p id="demo"></p>
 
-<p>We initially developed these applications while planning a local SecureDrop
-instance, but chose to only continue developing the supporting monitoring
-software.</p>
-
-<h1>Detailed Descriptions</h1>
-
-<h2><a href="https://github.com/park-bench/gpgmailer">Gpgmailer</a></h2>
-
-<p>Gpgmailer is a daemon that sends encrypted email and includes a Python library
-to add messages to its' queue.  The Python library, gpgmailqueue, accepts a
-subject, body, and an arbitrary number of attachments, then writes the
-unencrypted message to a file defined in the configuration file. The daemon
-reads the file, builds the email, signs, encrypts, and sends a
-properly-formatted PGP/MIME email to each configured recipient.</p>
-
-<h2><a href="https://github.com/park-bench/torwatchdog">Torwatchdog</a></h2>
-
-<p>Torwatchdog is a relatively simple URL checking daemon that uses Tor and times
-each request randomly. It starts its own Tor instance and randomly selects from
-a specified list of nameservers. When the daemon detects a state change, either
-up or down, it sends an encrypted email notification via Gpgmailer.</p>
-
-<h2><a href="https://github.com/park-bench/watchman">Watchman</a></h2>
-
-<p>Watchman is a daemon that monitors a camera for motion and responds by taking
-several pictures. Those pictures are then sent in an encrypted email via
-Gpgmailer. It detects and properly ignores background changes.</p>
-
-<h2><a href="https://github.com/park-bench/netcheck">Netcheck</a></h2>
-
-<p>Netcheck is a daemon that attempts to keep a working Internet connection at all
-times. It first checks the wired network for an address and for DNS capability.
-If that fails, it does the same with the backup wifi network, and if that
-fails, it checks a list of supplemental wifi networks. If all of that fails, it
-just keeps trying.</p>
-
-<h2><a href="https://github.com/park-bench/confighelper">Confighelper</a></h2>
-
-<p>Confighelper is a class with a collection of helper methods for parsing
-configuration files, performing very basic value-checking, and setting up
-logging in a particular way. All of our projects depend on this library.</p>
-
-<h1>Build/Install Instructions</h1>
-
-<p>Each package can be built in any order, but Confighelper must be installed
-first, Gpgmailer must be installed second, and then Torwatchdog, Watchman, and
-Netcheck may be installed in any order. Each of these projects has specific
-build instructions on their respective project pages.</p>
-
-<h1>Contact</h1>
-
-<p>We would love to know if you are using any of our projects! Even one user is a
-strong motivator for us, so please contact us with any questions or comments,
-either through Github or email.</p>
-
-<ul>
-<li>eviljoel: eviljoel (at) linux (dot) com, PGP fingerprint: A2BE 2D12 24D1 67CA 8830  DDE7 DFB3 676B 196D 6430</li>
-<li>emfrost: emfrost (at) poseo (dot) net, PGP fingerprint: 2D2E 5ACA 36AD F03F 35B9 AB73 FD1F A524 668F B1FA</li>
-</ul>
-
-<h1>License</h1>
-
-<p>These projects are all licensed under the Gnu Public License version 3.  This
-description project is licensed under the Creative Commons
-Attribution-ShareAlike 4.0 International license.</p>
-
-<h1>Special Thanks</h1>
-
-<p>We'd like to thank to the now defunct <a href="http://www.civiclab.us/">CivicLab</a> and it former operators, Benjamin Sugar and <a href="http://www.tresser.com/">Tom Tresser</a>. CivicLab provided some early support for our project by providing regular meeting and storage space.</p>
-
-<p>Mr. Tresser is an especially vocal community activist. As a thank you to him, we would like to bring your attention to his book, <a href="http://wearenotbroke.org/">Chicago Is Not Broke</a>.</p>
-</body>
+		</div>
+	</footer> 
+    <script src="joel.js"></script>
+  </body>
+ 
+  
 </html>
